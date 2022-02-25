@@ -6,6 +6,8 @@ import MovieDisplay from "./components/MovieDisplay";
 import Form from "./components/Form";
 
 function App() {
+  //variable with your apiKey
+  const apiKey = "98e3fb1f";
   // USE OUR COMPONENTS IN APPs RETURNED JSX
   return (
     <div className="App">
