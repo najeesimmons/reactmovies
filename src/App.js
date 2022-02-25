@@ -25,6 +25,11 @@ function App() {
     setMovie(data);
   };
 
+  //This will run on the first render but not on subsquent renders
+  React.useEffect(() => {
+    getMovie("Clueless");
+  }, []);
+  
   // USE OUR COMPONENTS IN APPs RETURNED JSX
   // We pass the getMovie function as a prop called moviesearch
   // We pass movie as props to movie display
